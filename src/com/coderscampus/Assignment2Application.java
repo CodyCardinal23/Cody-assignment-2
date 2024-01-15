@@ -27,7 +27,8 @@ public class Assignment2Application {
 					
 					if (userGuess == theRandomNumber) {
 						System.out.println("You win!\nThe number to guess was: " + theRandomNumber);
-						break;
+						scanner.close();
+						return;
 						
 					}else {
 						System.out.println(userGuess < theRandomNumber ? "Please pick a higher number" : "Please pick a lower number");
